@@ -2,12 +2,12 @@
 
  1. Introduce yourself.
  2. Do you own a personal computer?
- 3. Describe your development environmet. (Your OS, IDE, Editor and Config manager if any)
+ 3. Describe your development environment. (Your OS, IDE, Editor and Config manager if any)
 
 ## Social Profile
  1. Your StackOverflow Profile url.
- 2. Linkedin profile.
- 3. Perosonal website, blog or something you want us to see.
+ 2. LinkedIn profile.
+ 3. Personal website, blog or something you want us to see.
 
 ## The real stuff.
  1. Which all programming languages are installed on your system.
