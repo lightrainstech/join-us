@@ -14,8 +14,8 @@
 ## Social Profile
 ### 1. Your StackOverflow Profile url.
 
-    [slackoverflow/alvinzach](https://stackoverflow.com/users/4623462/alvin-zachariah)
+[slackoverflow/alvinzach](https://stackoverflow.com/users/4623462/alvin-zachariah)
 
 ### 2. Personal website, blog or something you want us to see.
 
-    [Github profile](https://github.com/alvinzach)
+[Github profile](https://github.com/alvinzach)
