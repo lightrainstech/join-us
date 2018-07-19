@@ -18,7 +18,8 @@
 
 ### 2. Personal website, blog or something you want us to see.
 
-[Github profile](https://github.com/alvinzach)
+* [Github profile](https://github.com/alvinzach)
+* [Resume](https://github.com/alvinzach/join-us/blob/alvin_job_application/Resume.pdf)
 
 ## The real stuff.
 ### 1. Which all programming languages are installed on your system.
