@@ -1,21 +1,24 @@
 ## About You.
 
 1. Introduce yourself.
+
    Hi, This is Nithya Rajan from Tirunelveli, Tamil Nadu. I am a front end developer having 3 years of experience. Specialized in JavaScript and Angular. Lead the Front End Team for a project for the past 1 year. Currently working in Global Software Solutions, Tirunelveli, Tamil Nadu. I love writing blog posts and contribute to open source as well.
 
 2. Do you own a personal computer?
+
    Yes, a laptop. Not that much performant, it has only 2gb ram.
 
 3. Describe your development environment. (Your OS, IDE, Editor and Config manager if any)
+
    Windows, VS Code
 
 ## Social Profile
 
 1. Your StackOverflow Profile url. 
 
-    -[StackOverflow Profile](https://stackoverflow.com/users/5013729/bear-nithi) 
-    -[StackOverflow Developer Story](https://stackoverflow.com/users/story/5013729)
-    -[NPM](https://www.npmjs.com/~bearnithi)
+    - [StackOverflow Profile](https://stackoverflow.com/users/5013729/bear-nithi) 
+    - [StackOverflow Developer Story](https://stackoverflow.com/users/story/5013729)
+    - [NPM](https://www.npmjs.com/~bearnithi)
 
 2. Personal website, blog or something you want us to see. 
     -[Bear Nithi Blog](http://bearnithi.com)
