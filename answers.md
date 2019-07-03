@@ -31,11 +31,13 @@
 2. Write a function that takes a number and returns a list of its digits in an array.
 
    ```javascript
-   function printNum(number) {
-     for (let i = 0; i <= number; i++) {
-       console.log(i);
-     }
-   }
+    function getDigitsArr(number) {
+      const digitsArr = [];
+      for (let i = 1; i <= number; i++) {
+        digitsArr.push(i);
+      }
+      return digitsArr;
+    }
    ```
 
 3. Remove duplicates of an array and returning an array of only unique elements
