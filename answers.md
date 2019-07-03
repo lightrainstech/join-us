@@ -21,7 +21,7 @@
     - [NPM](https://www.npmjs.com/~bearnithi)
 
 2. Personal website, blog or something you want us to see. 
-    -[Bear Nithi Blog](http://bearnithi.com)
+    - [Bear Nithi Blog](http://bearnithi.com)
 
 ## The real stuff.
 
@@ -80,7 +80,7 @@
     ```
 
 
-### Notes
+### Contact Info
 
 - bearnithi@gmail.com
 - 8248802608
