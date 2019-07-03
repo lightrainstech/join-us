@@ -6,7 +6,7 @@
 
 2. Do you own a personal computer?
 
-   Yes, a laptop. Not that much performant, it has only 2gb ram.
+   Yes, a laptop. Not that much powerful processor, it has only 2gb ram.
 
 3. Describe your development environment. (Your OS, IDE, Editor and Config manager if any)
 
