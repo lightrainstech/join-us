@@ -38,3 +38,16 @@ const fn = (num) => {
 const result = fn(55)
 console.log(result)
 ```
+
+3.
+```js
+const fn = (sampleArray) => {
+    return sampleArray.filter((element, index, array) => array.indexOf(element) === index)
+}
+
+const sampleArray = ["hii","hello","Me","Me","sample","sample"] 
+const result = fn(sampleArray)
+console.log(result)
+```
+
+4.
