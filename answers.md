@@ -11,3 +11,7 @@ HP ( intel i3, 4GB Ram )
 3.
 My operating system ubuntu 20.04
 I use Visual Studio for all my coding.
+
+## Social Profile
+
+[LinkedIn](www.linkedin.com/in/dibin-jose-ab63721b3)
