@@ -15,3 +15,26 @@ I use Visual Studio for all my coding.
 ## Social Profile
 
 [LinkedIn](www.linkedin.com/in/dibin-jose-ab63721b3)
+
+## The Real Stuff
+1.
+I have installed nodejs and npm for running js programs.
+Since I use ubuntu, python is already installed. I had also installed some ML libraries which were required for my mini project.
+MySql and Mongodb are also installed which accessed using terminal itself.
+For doing my main project I had installed ganache for creating a local blockchain network and also
+truffle.
+
+2.
+```js
+const fn = (num) => {
+    let numberArray = []
+    const n = num.toString()
+    for(const i in n) {
+        numberArray = [...numberArray, n[i]]
+    }
+    return numberArray
+}
+
+const result = fn(55)
+console.log(result)
+```
