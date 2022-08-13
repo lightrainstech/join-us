@@ -10,7 +10,7 @@
 
 # The real stuff.
 1. `brew list` says: go, ruby, sass, dart. Rust with rustup, nightly and beta 1.49.0 and lastest nightly, beta and stable
-2. 
+2. [Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=cf3b134992b78ae2b614aa0166338702)
 ```rust
 fn num_to_array(mut num: usize) -> Vec<usize> {
     let mut answer = Vec::new();
@@ -23,17 +23,19 @@ fn num_to_array(mut num: usize) -> Vec<usize> {
     answer
 }
 ```
-3. 
+3. This assumes the array is sorted. [Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=54ec63145b5e386d69ce2ad401be9ab9)
 ```rust
 use std::cmp::Ord;
 
-fn remove_duplicates<T: Ord>(vec: &mut Vec<T>) -> &mut Vec<T> {
-    vec.sort();
-    vec.dedup();
-    vec
+fn remove_duplicates<T: Clone + PartialEq>(vec: Vec<T>) -> Vec<T> {
+    vec.iter()
+        .enumerate()
+        .filter(|(index, value)| Some(value) != vec.get(index.wrapping_sub(1)).as_ref())
+        .map(|(_, val)| val.clone())
+        .collect()
 }
 ```
-4.
+4. [Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=61b8b30adf619651aedee01043d710b4)
 ```rust
 fn to_pig_latin<T: AsRef<str>>(string: T) -> String {
     let mut collected: String = string.as_ref().split(' ').map(|word| {
@@ -66,23 +68,22 @@ fn to_normal<T: AsRef<str>>(string: T) -> String {
     collected
 }
 ```
-5. This doesn't create a copy of the list but reallocates `k` elements if shifting left by `k`. I needed two swap operations in code, total swap operations is
-`vec.len()`. This doesn't get too bad if `k` is small, doesn't matter how big the array is.
+5. This doesn't create a copy of the list but reallocates `k` elements if shifting left by `k`. I needed two swap operations in code, total swap operations is `vec.len()`. This doesn't get too bad if `k` is small, doesn't matter how big the array is. [Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=67202f60c7de2c5218091b0e631a3775)
 ```rust
-fn rotate<T: Clone>(mut vec: Vec<T>,  n: usize) -> Vec<T> {
+fn rotate<'a, T: Clone>(mut vec: Vec<&'a T>, n: usize) -> Vec<&'a T> {
     let len = vec.len();
     // store the first n values
     let temp_store = Vec::from(&vec[0..n]);
-    
+
     // ignore first n, shif the rest
-    for i in 0..len-n {
-        vec[i] = vec[i+n];
+    for i in 0..len - n {
+        vec[i] = vec[i + n];
     }
     // push the rest
     for i in 0..n {
-        vec[len-1-i] = temp_store[temp_store.len()-1-i]
+        vec[len - 1 - i] = temp_store[temp_store.len() - 1 - i]
     }
-    
+
     vec
 }
 ```
