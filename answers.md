@@ -25,8 +25,6 @@ fn num_to_array(mut num: usize) -> Vec<usize> {
 ```
 3. This assumes the array is sorted. [Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=54ec63145b5e386d69ce2ad401be9ab9)
 ```rust
-use std::cmp::Ord;
-
 fn remove_duplicates<T: Clone + PartialEq>(vec: Vec<T>) -> Vec<T> {
     vec.iter()
         .enumerate()
