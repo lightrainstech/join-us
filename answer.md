@@ -13,6 +13,7 @@ I use Lenovo Ideapad C340, having 4 GB RAM, AMD Rajen 3 Processor.
 
 
 ## Problem Solution:
+## Note: For more clear code please refer ans.py file
 
 1. Python and Java
 
@@ -98,6 +99,7 @@ def translate_to_text(s):
 
 
 5. Write a function that rotates a list by `k` elements. For example [1,2,3,4,5,6] rotated by `2` becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
+
 
 def rotate(arr, k):
     n = len(arr)
