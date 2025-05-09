@@ -57,9 +57,9 @@ Java (OpenJDK 19.0.1)
 Go (go1.24.2)
 
 
-2. Write a function that takes a number and returns a list of its digits in an array.
+2. Write a function that takes a number and returns a list of its digits in an array ?
 
-javascript/**
+javascript
  * Takes a number and returns an array of its digits
 
 const getDigits = (num) => {
@@ -71,3 +71,17 @@ const getDigits = (num) => {
 console.log(getDigits(5236));  // [5, 2, 3, 6]
 console.log(getDigits(0));    // [0]
 console.log(getDigits(-5236)); // [5, 2, 3, 6]
+
+
+3. Remove duplicates of an array and returning an array of only unique elements ?
+
+javascript
+ * Takes an Array with duplicate numbers and removes duplicates from the array
+
+const getUniqueElements = (arr) => {
+  return [...new Set(arr)];
+};
+
+//Test cases
+console.log(getUniqueElements([1, 2, 2, 3, 4, 4, 5])); //Output [1, 2, 3, 4, 5]
+console.log(getUniqueElements(['a', 'b', 'a', 'c', 'b'])) // Output // ['a', 'b', 'c']
