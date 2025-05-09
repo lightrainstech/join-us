@@ -34,3 +34,14 @@ AWS CLI for cloud resource management
 Package Managers: npm
 API Testing: Postman for API testing and documentation
 Database Tools: MongoDB Compass, pgAdmin for database management
+
+
+Social Profile
+1. Your StackOverflow Profile url.
+https://stackoverflow.com/users/30493273/hiran-raj
+2. Personal website, blog or something you want us to see.
+
+GitHub Profile: https://github.com/Hiran-2001
+LinkedIn: https://www.linkedin.com/in/hiran-raj/
+Resume: https://docs.google.com/document/d/10lMr9inuePstTwHrW9buhj3SjoJ4owhGQlWfX9l04O4/edit?tab=t.0
+
