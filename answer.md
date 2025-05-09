@@ -55,3 +55,19 @@ TypeScript (v5.0.4)
 Python (v3.12.4)
 Java (OpenJDK 19.0.1)
 Go (go1.24.2)
+
+
+2. Write a function that takes a number and returns a list of its digits in an array.
+
+javascript/**
+ * Takes a number and returns an array of its digits
+
+const getDigits = (num) => {
+  const absNum = Math.abs(num); // Handle negative numbers
+  return absNum.toString().split('').map(digit => parseInt(digit));
+};
+
+// Test cases
+console.log(getDigits(5236));  // [5, 2, 3, 6]
+console.log(getDigits(0));    // [0]
+console.log(getDigits(-5236)); // [5, 2, 3, 6]
