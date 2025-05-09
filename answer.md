@@ -45,3 +45,13 @@ GitHub Profile: https://github.com/Hiran-2001
 LinkedIn: https://www.linkedin.com/in/hiran-raj/
 Resume: https://docs.google.com/document/d/10lMr9inuePstTwHrW9buhj3SjoJ4owhGQlWfX9l04O4/edit?tab=t.0
 
+
+The real stuff.
+1. Which all programming languages are installed on your system.
+The following programming languages are installed on my system:
+
+JavaScript/Node.js (v20.10.0)
+TypeScript (v5.0.4)
+Python (v3.12.4)
+Java (OpenJDK 19.0.1)
+Go (go1.24.2)
