@@ -84,4 +84,79 @@ const getUniqueElements = (arr) => {
 
 //Test cases
 console.log(getUniqueElements([1, 2, 2, 3, 4, 4, 5])); //Output [1, 2, 3, 4, 5]
-console.log(getUniqueElements(['a', 'b', 'a', 'c', 'b'])) // Output // ['a', 'b', 'c']
+console.log(getUniqueElements(['a', 'b', 'a', 'c', 'b'])) // Output // ['a', 'b', 'c'];
+
+
+4. Write function that translates a text to Pig Latin and back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’. “The quick brown fox” becomes “Hetay uickqay rownbay oxfay”.
+
+javascript
+
+ function toPigLatin(text) {
+    const words = text.split(' ');
+    const pigLatinWords = [];
+
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
+
+        if (word.length <= 1) {
+            pigLatinWords.push(word);
+            continue;
+        }
+
+        const isCapitalized = word[0] === word[0].toUpperCase();
+
+        const pigLatinWord = word.slice(1) + word[0] + 'ay';
+
+        if (isCapitalized) {
+            pigLatinWords.push(
+                pigLatinWord[0].toUpperCase() +
+                pigLatinWord.slice(1).toLowerCase()
+            );
+        } else {
+            pigLatinWords.push(pigLatinWord.toLowerCase());
+        }
+    }
+
+    return pigLatinWords.join(' ');
+}
+
+function toEnglish(text) {
+    const words = text.split(' ');
+    
+    const englishWords = [];
+    
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
+        
+        if (word.length <= 3) {
+            englishWords.push(word);
+            continue;
+        }
+        
+        if (!word.toLowerCase().endsWith('ay')) {
+            englishWords.push(word);
+            continue;
+        }
+        
+        const isCapitalized = word[0] === word[0].toUpperCase();
+        
+        const englishWord = word[word.length - 3] + 
+            word.slice(0, word.length - 3);
+        
+        if (isCapitalized) {
+            englishWords.push(
+                englishWord[0].toUpperCase() + 
+                englishWord.slice(1).toLowerCase()
+            );
+        } else {
+            englishWords.push(englishWord.toLowerCase());
+        }
+    }
+    
+    return englishWords.join(' ');
+}
+
+console.log(toPigLatin("The quick brown fox")); // Output: "Hetay uickqay rownbay oxfay"
+
+console.log(toEnglish("Hetay uickqay rownbay oxfay")); // Output: "The quick brown fox"
+
