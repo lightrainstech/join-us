@@ -160,3 +160,30 @@ console.log(toPigLatin("The quick brown fox")); // Output: "Hetay uickqay rownba
 
 console.log(toEnglish("Hetay uickqay rownbay oxfay")); // Output: "The quick brown fox"
 
+
+5. Write a function that rotates a list by k elements. For example [1,2,3,4,5,6] rotated by 2 becomes [3,4,5,6,1,2]. Try     solving this without creating a copy of the list. How many swap or move operations do you need?
+
+javascript
+  * Rotates an array by k elements in-place
+
+const rotateInPlace = (arr, k) => {
+  const n = arr.length;
+  k = k % n;
+  
+
+  const reverse = (start, end) => {
+    while (start < end) {
+      [arr[start], arr[end]] = [arr[end], arr[start]]; 
+      start++;
+      end--;
+    }
+  };
+
+  reverse(0, k - 1);   
+  reverse(k, n - 1);   
+  reverse(0, n - 1);    
+};
+
+const arr = [1, 2, 3, 4, 5];
+rotateInPlace(arr, 3);
+console.log(arr); // Output: [4, 5, 1, 2, 3]
