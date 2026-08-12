@@ -17,9 +17,10 @@ I'm Jithin, from Kozhikode. I'm a Frontend Developer with 2 years of experience 
    - Sorry, I don't have a stackoverflow profile
 
 2. Personal website, blog or something you want us to see.
-   websites that I have worked on:
-   - https://www.clubtravalet.com/
-   - https://eivolife.com/
+
+   Websites that I have worked on:
+   - [Club Travalet](https://www.clubtravalet.com/) (Contributed to modules such as Flights, Visa, Holiday Packages, and more.)
+   - [Eivo](https://eivolife.com/) (Eivo is a product that is soon to be launched by Zerito Technologies, the company I previously worked for. This website is a promotional page for the product.)
 
 ## The real stuff.
 
@@ -28,6 +29,7 @@ I'm Jithin, from Kozhikode. I'm a Frontend Developer with 2 years of experience 
    - Javascript
    - Dart
    - Python
+
      **Python and Dart were installed for experimenting with a few projects. I had a basic understanding of both and explored them for project-related work at my previous company**
 
 2. Write a function that takes a number and returns a list of its digits in an array.
