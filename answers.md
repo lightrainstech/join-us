@@ -33,6 +33,18 @@ I'm Jithin, from Kozhikode. I'm a Frontend Developer with 2 years of experience 
      **Python and Dart were installed for experimenting with a few projects. I had a basic understanding of both and explored them for project-related work at my previous company**
 
 2. Write a function that takes a number and returns a list of its digits in an array.
+
+   ```typescript
+   const numberToArray = (num: number): number[] => {
+     return String(num)
+       .split("")
+       .map((item) => Number(item));
+   };
+   numberToArray(452345);
+   ```
+
+   _the example above will return array [4, 5, 2, 3, 4, 5]_
+
 3. Remove duplicates of an array and returning an array of only unique elements
 4. Write function that translates a text to Pig Latin and back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’. “The quick brown fox” becomes “Hetay uickqay rownbay oxfay”.
 5. Write a function that rotates a list by `k` elements. For example [1,2,3,4,5,6] rotated by `2` becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
