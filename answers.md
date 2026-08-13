@@ -92,6 +92,8 @@ I'm Jithin, from Kozhikode. I'm a Frontend Developer with 2 years of experience 
 
 5. Write a function that rotates a list by `k` elements. For example [1,2,3,4,5,6] rotated by `2` becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
 
+- **I wasn't able to solve this problem.**
+
 Note: It is not mandatory that you answer all the questions. You may leave some behind and create a PR. However maximum questions will earn you maximum points. It is advised that you answer all the puzzles in a language that you are applying for.
 
 ### Notes
