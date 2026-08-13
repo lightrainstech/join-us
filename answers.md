@@ -57,6 +57,39 @@ I'm Jithin, from Kozhikode. I'm a Frontend Developer with 2 years of experience 
    _the example above will return array [2,3,5,4]_
 
 4. Write function that translates a text to Pig Latin and back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’. “The quick brown fox” becomes “Hetay uickqay rownbay oxfay”.
+
+   ```typescript
+   const toPigLatinAndBack = (phrase: string): string => {
+     if (phrase.length < 1) {
+       throw new Error("No Words Detected");
+     }
+     const splitPhrase = phrase.toLocaleLowerCase().split(" ");
+     const areWordsEndingWithAY = splitPhrase.every((item) =>
+       item.endsWith("ay"),
+     );
+     if (areWordsEndingWithAY) {
+       const ayRemovedList = splitPhrase.map((item) => {
+         const removeAY = item.slice(0, item.length - 2);
+         const lastChar = removeAY[removeAY.length - 1];
+         const originalWord = `${lastChar}${removeAY.slice(0, removeAY.length - 1)}`;
+         return originalWord;
+       });
+       return ayRemovedList.join(" ");
+     }
+     const pigLatinList = splitPhrase.map((item) => {
+       const firstChar = item[0];
+       const wordWithNoFirstChar = item.slice(1, item.length);
+       const pigLatin = `${wordWithNoFirstChar}${firstChar}ay`;
+       return pigLatin;
+     });
+     return pigLatinList.join(" ");
+   };
+   ```
+
+   _example output: toPigLatinAndBack("ymay amenay siay ithinjay") will return 'My name is Jithin'_
+
+   _example output: toPigLatinAndBack("My name is Jithin") will return 'ymay amenay siay ithinjay'_
+
 5. Write a function that rotates a list by `k` elements. For example [1,2,3,4,5,6] rotated by `2` becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
 
 Note: It is not mandatory that you answer all the questions. You may leave some behind and create a PR. However maximum questions will earn you maximum points. It is advised that you answer all the puzzles in a language that you are applying for.
@@ -66,3 +99,15 @@ Note: It is not mandatory that you answer all the questions. You may leave some 
 - [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin)
 - [Fun](http://www.snowcrest.net/donnelly/piglatin.html)
 - [Nice Read](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
