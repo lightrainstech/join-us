@@ -30,3 +30,79 @@ GitHub:🔗 https://github.com/Deepik-a
 Projects:-
 - Echo-Emporium :https://ecommerce-echoemporium.onrender.com/
 - GRAVITY:https://www.gravityconstruction.co.in/
+
+
+## The real stuff
+
+1. Which programming languages are installed on your system?
+- JavaScript (Node.js)
+- TypeScript
+- Java
+- C
+ 2. Function that takes a number and returns its digits in an array
+
+function getDigits(num) {
+  return num
+    .toString()
+    .split('')
+    .filter((x) => !isNaN(x))
+    .map(Number)
+}
+console.log(getDigits(12345))
+console.log(getDigits(-907))
+
+
+### 3. Remove duplicates from an array
+
+function unique(arr) {
+  return [...new Set(arr)];
+}
+
+console.log(unique([1, 2, 2, 3, 1, 4]))
+
+### 4. Pig Latin translator (and back)
+
+function toPigLatin(text) {
+  return text
+    .split(' ')
+    .map((word) => word.slice(1) + word[0] + 'ay')
+    .join(' ');
+}
+
+function fromPigLatin(text) {
+  return text
+    .split(' ')
+    .map((word) => {
+      const stripped = word.slice(0, -2); 
+      return stripped[stripped.length - 1] + stripped.slice(0, -1);
+    })
+    .join(' ');
+}
+
+const pig = toPigLatin('The quick brown fox');
+console.log(pig);                
+console.log(fromPigLatin(pig));  
+
+
+### 5. Rotate a list by `k` elements without copying
+
+function reverse(arr, start, end) {
+  while (start < end) {
+    [arr[start], arr[end]] = [arr[end], arr[start]];
+    start++;
+    end--;
+  }
+}
+
+function rotate(arr, k) {
+  const n = arr.length;
+  if (n === 0) return arr;
+  k = ((k % n) + n) % n; 
+  reverse(arr, 0, k - 1);
+  reverse(arr, k, n - 1);
+  reverse(arr, 0, n - 1);
+  return arr;
+}
+
+console.log(rotate([1, 2, 3, 4, 5, 6], 2)); 
+
